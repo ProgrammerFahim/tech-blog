@@ -36,7 +36,7 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
+        src="../images/profile-pic.jpg"
         width={50}
         height={50}
         quality={95}
@@ -44,11 +44,11 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Hi, I'm <strong>{author.name}</strong>, and this is my tech blog.
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          Expect a lot of code, and you won't be disappointed.
+          {` `}
+          <a href="https://twitter.com/ProgrammerFahim">Follow me on Twitter!</a>
         </p>
       )}
     </div>
